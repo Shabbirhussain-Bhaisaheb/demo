@@ -7,4 +7,4 @@ just checking
 
 in test branch
 
-testing exclusion
+testing exclusions
