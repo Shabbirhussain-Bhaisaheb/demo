@@ -20,7 +20,7 @@ jobs:
       - name: upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: my-artifact
+          name: build-artifact
           path: ${{github.workspace}} # or path/to/artifact
   
   deploy:
