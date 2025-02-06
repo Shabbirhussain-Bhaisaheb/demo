@@ -22,3 +22,14 @@ jobs:
         with:
           name: my-artifact
           path: ${{github.workspace}} # or path/to/artifact
+  
+  deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+          - uses: actions/download-artifact@v4
+            with:
+              name: build-artifact
+              path: ${{github.workspace}}
+          - name: Display structure of downloaded files
+            run: ls -R
