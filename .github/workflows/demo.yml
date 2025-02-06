@@ -31,5 +31,5 @@ jobs:
             with:
               name: build-artifact
               path: ${{github.workspace}}
-          - name: Display structure of downloaded files
-            run: ls -R
+          # - name: Display structure of downloaded files
+          #   run: ls -R
